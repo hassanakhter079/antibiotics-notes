@@ -1,0 +1,1524 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <!-- WebCraft Brand & Favicon -->
+  <link rel="icon" type="image/png" href="data:image/png;base64,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">
+  <link rel="apple-touch-icon" href="data:image/png;base64,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">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Antibiotics — Clinical Reference Notes</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <style>
+        /* ══════════════════════════════════════
+           DESIGN TOKENS
+        ══════════════════════════════════════ */
+        :root {
+            --blue:      #5b9bf8;
+            --blue-dim:  #1a3060;
+            --green:     #34d399;
+            --green-dim: #0a3324;
+            --red:       #f87171;
+            --red-dim:   #3d1515;
+            --orange:    #fb923c;
+            --orange-dim:#3a2008;
+            --purple:    #c084fc;
+            --purple-dim:#2d1452;
+            --yellow:    #fbbf24;
+            --yellow-dim:#2d2208;
+            --cyan:      #38bdf8;
+            --cyan-dim:  #0a2a3d;
+            --radius-sm: 6px;
+            --radius-md: 10px;
+            --radius-lg: 14px;
+        }
+
+        /* ── DARK THEME ── */
+        [data-theme="dark"] {
+            --bg:           #0d1117;
+            --bg-deep:      #080c10;
+            --surface:      #161b24;
+            --surface2:     #1c2333;
+            --surface3:     #222b3a;
+            --border:       #263043;
+            --border-faint: #1c2333;
+            --text:         #d1dae6;
+            --text-dim:     #7a8ca0;
+            --text-faint:   #3d4f60;
+            --heading:      #f0f4f8;
+            --nav-bg:       rgba(13,17,23,0.92);
+            --hover-row:    rgba(255,255,255,0.03);
+            --badge-yellow-bg: #2d2208;
+            --badge-yellow-txt: #fbbf24;
+            --badge-yellow-bd:  #c97c0e;
+        }
+
+        /* ── LIGHT THEME ── */
+        [data-theme="light"] {
+            --bg:           #f0f3f8;
+            --bg-deep:      #e5eaf2;
+            --surface:      #ffffff;
+            --surface2:     #f5f7fc;
+            --surface3:     #edf0f7;
+            --border:       #cdd5e0;
+            --border-faint: #e5eaef;
+            --text:         #1e2a38;
+            --text-dim:     #506070;
+            --text-faint:   #9aabbf;
+            --heading:      #0d1824;
+            --nav-bg:       rgba(240,243,248,0.95);
+            --hover-row:    rgba(0,0,0,0.025);
+            --badge-yellow-bg: #fef3c7;
+            --badge-yellow-txt: #92400e;
+            --badge-yellow-bd:  #d97706;
+
+            --blue-dim:   #dbeafe;
+            --green-dim:  #d1fae5;
+            --red-dim:    #fee2e2;
+            --orange-dim: #fed7aa;
+            --purple-dim: #f3e8ff;
+            --yellow-dim: #fef3c7;
+            --cyan-dim:   #e0f7ff;
+        }
+
+        /* ══════════════════════════════════════
+           RESET + BASE
+        ══════════════════════════════════════ */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.65;
+            padding-bottom: 80px;
+        }
+
+        .page-wrap {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* ══════════════════════════════════════
+           FIXED TOP NAV — slimmer, more refined
+        ══════════════════════════════════════ */
+        .topnav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 999;
+            background: var(--nav-bg);
+            border-bottom: 1px solid var(--border);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+        .topnav-inner {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            height: 48px;
+        }
+        .nav-brand {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.72rem;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--blue);
+            white-space: nowrap;
+            flex-shrink: 0;
+            padding-right: 10px;
+            border-right: 1px solid var(--border);
+        }
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            overflow-x: auto;
+            flex: 1;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+        }
+        .nav-links::-webkit-scrollbar { display: none; }
+        .nav-link {
+            color: var(--text-dim);
+            text-decoration: none;
+            padding: 4px 11px;
+            border-radius: 20px;
+            font-size: 0.72rem;
+            font-weight: 500;
+            white-space: nowrap;
+            transition: color 0.15s, background 0.15s;
+            flex-shrink: 0;
+        }
+        .nav-link:hover { color: var(--text); background: var(--surface2); }
+        .nav-link.active {
+            color: var(--blue);
+            background: var(--blue-dim);
+            font-weight: 600;
+        }
+        .theme-toggle {
+            flex-shrink: 0;
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 4px 12px;
+            cursor: pointer;
+            font-size: 0.75rem;
+            color: var(--text-dim);
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            white-space: nowrap;
+            transition: all 0.15s;
+        }
+        .theme-toggle:hover { border-color: var(--blue); color: var(--blue); }
+
+        [id] { scroll-margin-top: 60px; }
+
+        /* ══════════════════════════════════════
+           PAGE HEADER — more character
+        ══════════════════════════════════════ */
+        .page-header {
+            padding: 80px 0 40px;
+            margin-bottom: 36px;
+            border-bottom: 1px solid var(--border);
+            position: relative;
+        }
+        .page-header-eyebrow {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.68rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--text-faint);
+            margin-bottom: 14px;
+        }
+        .page-header h1 {
+            font-family: 'DM Serif Display', serif;
+            font-size: clamp(2rem, 6vw, 3.2rem);
+            font-weight: 400;
+            letter-spacing: -0.5px;
+            line-height: 1.15;
+            color: var(--heading);
+        }
+        .page-header h1 em {
+            font-style: italic;
+            color: var(--blue);
+        }
+        .header-meta {
+            margin-top: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        .header-chip {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.68rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            padding: 4px 12px;
+            border-radius: 20px;
+            border: 1px solid var(--border);
+            color: var(--text-dim);
+            background: var(--surface2);
+        }
+        .header-chip.chip-blue {
+            background: var(--blue-dim);
+            color: var(--blue);
+            border-color: var(--blue);
+        }
+
+        /* ══════════════════════════════════════
+           SECTION HEADINGS
+        ══════════════════════════════════════ */
+        .section-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.63rem;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+            color: var(--text-faint);
+            margin-bottom: 8px;
+            margin-top: 52px;
+        }
+        .section-title {
+            font-family: 'Inter', sans-serif;
+            font-size: clamp(1.05rem, 2.5vw, 1.3rem);
+            font-weight: 700;
+            color: var(--heading);
+            margin-bottom: 22px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            letter-spacing: -0.2px;
+        }
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(to right, var(--border), transparent);
+        }
+
+        /* ══════════════════════════════════════
+           SECTION DIVIDER — more presence
+        ══════════════════════════════════════ */
+        hr.section-hr {
+            border: none;
+            height: 1px;
+            background: var(--border);
+            margin: 48px 0;
+            position: relative;
+        }
+
+        /* ══════════════════════════════════════
+           CARDS
+        ══════════════════════════════════════ */
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 22px;
+            margin-bottom: 14px;
+        }
+        .card-title {
+            font-size: 0.92rem;
+            font-weight: 600;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--heading);
+        }
+        .accent-bar {
+            width: 3px;
+            height: 16px;
+            border-radius: 2px;
+            display: inline-block;
+            flex-shrink: 0;
+        }
+
+        /* ══════════════════════════════════════
+           GRID
+        ══════════════════════════════════════ */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
+            gap: 14px;
+            margin-bottom: 14px;
+        }
+
+        /* ══════════════════════════════════════
+           TABLES
+        ══════════════════════════════════════ */
+        .tbl-wrap {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            margin-top: 14px;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border);
+            background: var(--surface);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+            min-width: 420px;
+        }
+        th {
+            background: var(--surface2);
+            color: var(--text-dim);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.63rem;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 11px 14px;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+            font-weight: 600;
+        }
+        td {
+            padding: 13px 14px;
+            border-bottom: 1px solid var(--border-faint);
+            vertical-align: top;
+            line-height: 1.6;
+        }
+        tr:last-child td { border-bottom: none; }
+        tbody tr:hover td { background: var(--hover-row); }
+
+        /* ══════════════════════════════════════
+           BADGES
+        ══════════════════════════════════════ */
+        .badge {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 20px;
+            font-size: 0.68rem;
+            font-weight: 600;
+            font-family: 'JetBrains Mono', monospace;
+            white-space: nowrap;
+            line-height: 1.7;
+        }
+        .b-blue   { background: var(--blue-dim);   color: var(--blue);   border: 1px solid color-mix(in srgb, var(--blue) 40%, transparent); }
+        .b-green  { background: var(--green-dim);  color: var(--green);  border: 1px solid color-mix(in srgb, var(--green) 40%, transparent); }
+        .b-red    { background: var(--red-dim);    color: var(--red);    border: 1px solid color-mix(in srgb, var(--red) 40%, transparent); }
+        .b-orange { background: var(--orange-dim); color: var(--orange); border: 1px solid color-mix(in srgb, var(--orange) 40%, transparent); }
+        .b-purple { background: var(--purple-dim); color: var(--purple); border: 1px solid color-mix(in srgb, var(--purple) 40%, transparent); }
+        .b-yellow { background: var(--badge-yellow-bg); color: var(--badge-yellow-txt); border: 1px solid var(--badge-yellow-bd); }
+        .b-cyan   { background: var(--cyan-dim);   color: var(--cyan);   border: 1px solid color-mix(in srgb, var(--cyan) 40%, transparent); }
+
+        [data-theme="light"] .b-green  { color: #047857; }
+        [data-theme="light"] .b-red    { color: #b91c1c; }
+        [data-theme="light"] .b-orange { color: #c2410c; }
+        [data-theme="light"] .b-purple { color: #7e22ce; }
+        [data-theme="light"] .b-cyan   { color: #0369a1; }
+        [data-theme="light"] .b-blue   { color: #1d4ed8; }
+
+        /* ══════════════════════════════════════
+           CALLOUT BOXES — cleaner left-accent style
+        ══════════════════════════════════════ */
+        .pearl, .danger, .warn, .info, .corrected {
+            padding: 12px 16px;
+            border-radius: 0 var(--radius-md) var(--radius-md) 0;
+            margin: 12px 0;
+            font-size: 0.86rem;
+            line-height: 1.65;
+        }
+        .pearl    { background: var(--green-dim);  border-left: 3px solid var(--green); }
+        .danger   { background: var(--red-dim);    border-left: 3px solid var(--red); }
+        .warn     { background: var(--orange-dim); border-left: 3px solid var(--orange); }
+        .info     { background: var(--blue-dim);   border-left: 3px solid var(--blue); }
+        .corrected{ background: var(--purple-dim); border-left: 3px solid var(--purple); }
+
+        .pearl-title    { color: var(--green);  font-weight: 700; font-size: 0.72rem; letter-spacing: 0.5px; margin-bottom: 5px; font-family: 'JetBrains Mono', monospace; }
+        .danger-title   { color: var(--red);    font-weight: 700; font-size: 0.72rem; letter-spacing: 0.5px; margin-bottom: 5px; font-family: 'JetBrains Mono', monospace; }
+        .warn-title     { color: var(--orange); font-weight: 700; font-size: 0.72rem; letter-spacing: 0.5px; margin-bottom: 5px; font-family: 'JetBrains Mono', monospace; }
+        .info-title     { color: var(--blue);   font-weight: 700; font-size: 0.72rem; letter-spacing: 0.5px; margin-bottom: 5px; font-family: 'JetBrains Mono', monospace; }
+        .corrected-title{ color: var(--purple); font-weight: 700; font-size: 0.72rem; letter-spacing: 0.5px; margin-bottom: 5px; font-family: 'JetBrains Mono', monospace; }
+
+        /* ══════════════════════════════════════
+           MOA HEADER
+        ══════════════════════════════════════ */
+        .moa-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 18px;
+            padding: 18px 20px;
+            border-radius: var(--radius-lg);
+            margin-bottom: 18px;
+            border: 1px solid var(--border);
+            flex-wrap: wrap;
+        }
+        .moa-num {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.6rem;
+            font-weight: 700;
+            opacity: 0.45;
+            min-width: 44px;
+            line-height: 1;
+            padding-top: 4px;
+            flex-shrink: 0;
+        }
+        .moa-label { font-size: 1.05rem; font-weight: 600; color: var(--heading); }
+        .moa-sub   { font-size: 0.78rem; color: var(--text-dim); font-family: 'JetBrains Mono', monospace; margin-top: 4px; }
+
+        /* ══════════════════════════════════════
+           GENERATION LADDER
+        ══════════════════════════════════════ */
+        .gen-ladder { display: flex; flex-direction: column; gap: 5px; }
+        .gen-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 11px 14px;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border-faint);
+            background: var(--surface2);
+            font-size: 0.85rem;
+            flex-wrap: wrap;
+            transition: border-color 0.15s;
+        }
+        .gen-row:hover { border-color: var(--border); }
+        .gen-num {
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 700;
+            font-size: 0.75rem;
+            min-width: 32px;
+            color: var(--text-faint);
+            padding-top: 2px;
+            flex-shrink: 0;
+        }
+        .gen-name  { font-weight: 600; min-width: 110px; flex-shrink: 0; color: var(--heading); }
+        .gen-drugs { color: var(--text-dim); font-size: 0.8rem; flex: 1; min-width: 160px; }
+        .gen-note  { font-size: 0.74rem; font-family: 'JetBrains Mono', monospace; color: var(--text-dim); min-width: 160px; }
+
+        /* ══════════════════════════════════════
+           ORDER OF PREFERENCE GRID
+        ══════════════════════════════════════ */
+        .pref-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+            gap: 12px;
+        }
+        .pref-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            padding: 16px;
+            transition: border-color 0.2s;
+        }
+        .pref-card:hover { border-color: var(--blue); }
+        .pref-organism {
+            font-weight: 700;
+            font-size: 0.88rem;
+            margin-bottom: 12px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border-faint);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+            color: var(--heading);
+        }
+        .pref-line {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 7px;
+            font-size: 0.84rem;
+        }
+        .pref-rank {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.65rem;
+            font-weight: 700;
+            min-width: 24px;
+            padding-top: 3px;
+            flex-shrink: 0;
+        }
+
+        /* ══════════════════════════════════════
+           SE GRID
+        ══════════════════════════════════════ */
+        .se-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+            gap: 10px;
+        }
+        .se-card {
+            background: var(--surface2);
+            border: 1px solid var(--border-faint);
+            border-radius: var(--radius-md);
+            padding: 14px;
+        }
+        .se-drug { font-weight: 600; font-size: 0.88rem; margin-bottom: 8px; color: var(--heading); }
+        .se-item { display: flex; align-items: flex-start; gap: 8px; font-size: 0.82rem; margin-bottom: 5px; }
+        .se-dot  { width: 5px; height: 5px; border-radius: 50%; margin-top: 7px; flex-shrink: 0; }
+
+        /* ══════════════════════════════════════
+           MNEMONIC BOX
+        ══════════════════════════════════════ */
+        .mnemonic-box {
+            background: linear-gradient(135deg, var(--yellow-dim), transparent);
+            border: 1px solid color-mix(in srgb, var(--yellow) 35%, transparent);
+            border-radius: var(--radius-md);
+            padding: 16px;
+            margin: 14px 0;
+        }
+        .mnemonic-title {
+            color: var(--yellow);
+            font-weight: 700;
+            font-size: 0.72rem;
+            font-family: 'JetBrains Mono', monospace;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+        .mnemonic-letters { display: flex; flex-wrap: wrap; gap: 8px; }
+        .ml {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: rgba(251,191,36,0.06);
+            border: 1px solid rgba(251,191,36,0.22);
+            border-radius: var(--radius-sm);
+            padding: 8px 12px;
+            min-width: 54px;
+            transition: border-color 0.15s;
+        }
+        .ml:hover { border-color: rgba(251,191,36,0.5); }
+        .ml-letter { font-size: 1.4rem; font-weight: 700; color: var(--yellow); font-family: 'JetBrains Mono', monospace; }
+        .ml-word   { font-size: 0.6rem; color: var(--text-dim); text-align: center; margin-top: 3px; line-height: 1.3; }
+
+        /* ══════════════════════════════════════
+           DRUG NAME PILL
+        ══════════════════════════════════════ */
+        .drug-name {
+            display: inline-block;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.95rem;
+            font-weight: 700;
+            letter-spacing: 0.3px;
+            color: var(--heading);
+            background: var(--surface2);
+            border: 1.5px solid var(--blue);
+            border-radius: var(--radius-sm);
+            padding: 3px 11px 3px 9px;
+            margin-bottom: 4px;
+            box-shadow: 0 0 0 3px color-mix(in srgb, var(--blue-dim) 80%, transparent);
+        }
+        td .drug-name { font-size: 0.88rem; }
+
+        /* ══════════════════════════════════════
+           COVERAGE STRIP
+        ══════════════════════════════════════ */
+        .coverage-strip {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin: 8px 0 4px;
+            padding: 7px 10px;
+            background: rgba(91,155,248,0.05);
+            border-left: 2px solid var(--blue);
+            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+            font-size: 0.74rem;
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 600;
+            color: var(--text-dim);
+            letter-spacing: 0.3px;
+        }
+        .coverage-strip .cov-label {
+            color: var(--blue);
+            font-size: 0.62rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-right: 4px;
+            flex-shrink: 0;
+        }
+
+        /* ══════════════════════════════════════
+           FOOTER
+        ══════════════════════════════════════ */
+        .page-footer {
+            text-align: center;
+            margin-top: 64px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            color: var(--text-faint);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.68rem;
+            line-height: 1.9;
+        }
+
+        /* ══════════════════════════════════════
+           MOBILE
+        ══════════════════════════════════════ */
+        @media (max-width: 560px) {
+            .page-wrap { padding: 0 14px; }
+            .page-header h1 { font-size: 1.75rem; }
+            .nav-brand { display: none; }
+            th, td { padding: 9px 10px; font-size: 0.8rem; }
+            .gen-row { flex-direction: column; gap: 4px; }
+            .gen-name { min-width: unset; }
+            .moa-num { font-size: 1.2rem; }
+            .card { padding: 16px; }
+            .moa-header { padding: 14px 16px; gap: 12px; }
+        }
+
+        /* ══════════════════════════════════════
+           PRINT-FRIENDLY
+        ══════════════════════════════════════ */
+        @media print {
+            .topnav { display: none; }
+            body { padding: 0; font-size: 0.8rem; }
+            .page-header { padding-top: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ══ FIXED TOP NAVBAR ══ -->
+<nav class="topnav" role="navigation" aria-label="Section navigation">
+    <div class="topnav-inner">
+        <span class="nav-brand">Rx·Ref</span>
+        <div class="nav-links">
+            <a class="nav-link" href="#basics">Basics</a>
+            <a class="nav-link" href="#penicillins">Penicillins</a>
+            <a class="nav-link" href="#cephalosporins">Cephalosporins</a>
+            <a class="nav-link" href="#carbapenems">Carbapenems</a>
+            <a class="nav-link" href="#aminoglycosides">Aminoglycosides</a>
+            <a class="nav-link" href="#tetracyclines">Tetracyclines</a>
+            <a class="nav-link" href="#50s">50S Inhibitors</a>
+            <a class="nav-link" href="#dna">DNA Inhibitors</a>
+            <a class="nav-link" href="#metro">Metronidazole</a>
+            <a class="nav-link" href="#other">Other Agents</a>
+            <a class="nav-link" href="#order">Preference</a>
+            <a class="nav-link" href="#se">Toxicity</a>
+        </div>
+        <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle light/dark mode">
+            <span id="theme-icon">☀️</span>
+            <span id="theme-label">Light</span>
+        </button>
+    </div>
+</nav>
+
+<div class="page-wrap">
+
+    <!-- ══ PAGE HEADER ══ -->
+    <div class="page-header">
+        <div class="page-header-eyebrow">Clinical Reference · FCPS Part I</div>
+        <h1><em>Antibiotics</em><br>MOA · Spectrum · Toxicity</h1>
+        <div class="header-meta">
+            <span class="header-chip chip-blue">v2.2</span>
+            <span class="header-chip">Fact-Checked July 2026</span>
+            <span class="header-chip">FCPS-Ready</span>
+        </div>
+    </div>
+
+    <!-- ══ SECTION 01: BASICS ══ -->
+    <div id="basics">
+        <div class="section-label">Section 01</div>
+        <div class="section-title">Core Concepts</div>
+
+        <div class="grid-2">
+            <div class="card">
+                <div class="card-title"><span class="accent-bar" style="background:var(--blue)"></span>What Is an Antibiotic?</div>
+                <p style="font-size:0.88rem; color:var(--text-dim);">A substance originally derived from bacteria or fungi, chemically modified and used to inhibit or kill bacteria.</p>
+                <div class="info" style="margin-top:12px;">
+                    <div class="info-title">⚡ KEY DISTINCTION</div>
+                    <strong>Bactericidal</strong> = kills bacteria (β-lactams, aminoglycosides, quinolones, metronidazole)<br>
+                    <strong>Bacteriostatic</strong> = inhibits growth (macrolides, tetracyclines, clindamycin, sulfonamides)
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-title"><span class="accent-bar" style="background:var(--green)"></span>Quick Rules of Thumb</div>
+                <div style="font-size:0.875rem;">
+                    <div class="pref-line" style="margin-bottom:10px;"><div><span class="badge b-purple">Gram +ve</span> → <strong>Penicillins</strong> (1st choice)</div></div>
+                    <div class="pref-line" style="margin-bottom:10px;"><div><span class="badge b-red">Gram –ve</span> → <strong>3rd Gen Cephalosporins / Aminoglycosides</strong></div></div>
+                    <div class="pref-line" style="margin-bottom:10px;"><div><span class="badge b-cyan">Atypicals</span> → <strong>Macrolides / Doxycycline</strong></div></div>
+                    <div class="pref-line"><div><span class="badge b-orange">Anaerobes</span> → <strong>Metronidazole</strong></div></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-title"><span class="accent-bar" style="background:var(--red)"></span>4 Universal Side Effect Categories</div>
+            <div class="se-grid">
+                <div class="se-card">
+                    <div class="se-drug" style="color:var(--red)">① Anaphylactic</div>
+                    <div class="se-item"><div class="se-dot" style="background:var(--red)"></div><div>Urticaria, skin rashes, anaphylactic shock</div></div>
+                    <div class="warn" style="margin-top:8px;">
+                        <div class="warn-title">⚠️ CLINICAL NOTE</div>
+                        Routine "test doses" without an allergy history are not supported by evidence. For patients with a documented allergy, perform formal risk-stratification (e.g., PEN-FAST) or skin testing.
+                    </div>
+                </div>
+                <div class="se-card">
+                    <div class="se-drug" style="color:var(--orange)">② Irritative (GI)</div>
+                    <div class="se-item"><div class="se-dot" style="background:var(--orange)"></div><div>Nausea, vomiting, diarrhea</div></div>
+                    <div class="se-item"><div class="se-dot" style="background:var(--orange)"></div><div>Erythromycin: worst offender (GI motility ↑)</div></div>
+                </div>
+                <div class="se-card">
+                    <div class="se-drug" style="color:var(--yellow)">③ Superinfection</div>
+                    <div class="se-item"><div class="se-dot" style="background:var(--yellow)"></div><div><strong>C. difficile</strong> → Pseudomembranous colitis</div></div>
+                    <div class="se-item"><div class="se-dot" style="background:var(--yellow)"></div><div>Candidiasis (oral / vaginal)</div></div>
+                    <div class="se-item"><div class="se-dot" style="background:var(--yellow)"></div><div>Most common with broad-spectrum ABx</div></div>
+                </div>
+                <div class="se-card">
+                    <div class="se-drug" style="color:var(--purple)">④ Drug-Specific Toxicity</div>
+                    <div class="se-item"><div class="se-dot" style="background:var(--purple)"></div><div>Each antibiotic has a unique toxic profile</div></div>
+                    <div class="se-item"><div class="se-dot" style="background:var(--purple)"></div><div>See per-drug sections below</div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="section-hr">
+
+    <!-- ══ MOA 01: CELL WALL ══ -->
+    <div class="section-label">MOA 01</div>
+    <div class="section-title">Cell Wall / Membrane Inhibitors</div>
+
+    <!-- PENICILLINS -->
+    <div id="penicillins">
+        <div class="moa-header" style="background:var(--purple-dim); border-color:var(--purple);">
+            <div class="moa-num">01</div>
+            <div>
+                <div class="moa-label"><span class="drug-name" style="border-color:var(--purple); box-shadow:0 0 0 3px color-mix(in srgb,var(--purple-dim) 80%,transparent); font-size:1.1rem;">Penicillins</span></div>
+                <div class="moa-sub" style="margin-top:8px;">β-Lactam ring → inhibits transpeptidase → blocks peptidoglycan cross-linking → cell lysis</div>
+            </div>
+        </div>
+
+        <div class="info"><div class="info-title">⚡ β-LACTAMASE PROBLEM</div>
+        <em>S. aureus</em> produces β-lactamase → destroys the β-lactam ring → resistance.<br>
+        <strong>Fix:</strong> Add β-lactamase inhibitor: Clavulanic acid (Augmentin), Sulbactam, Tazobactam (Tazocin).</div>
+
+        <div class="tbl-wrap">
+        <table>
+            <thead>
+                <tr><th>Class</th><th>Drugs (PK brands)</th><th>Spectrum</th><th>Key Notes / Toxicity</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="drug-name">Natural Penicillin</div><br>
+                        <div class="coverage-strip"><span class="cov-label">Covers ▶</span> <span class="badge b-purple">Gram +ve</span> <span class="badge b-red">–ve Cocci</span> <span class="badge b-blue">Spirochetes</span></div>
+                    </td>
+                    <td>Benzylpenicillin (Penicillin G — IV), Phenoxymethylpenicillin (Penicillin V — oral)</td>
+                    <td><span class="badge b-purple">Gram +ve</span> <span class="badge b-red">–ve Cocci</span> Spirochetes</td>
+                    <td><span class="badge b-green">Safest</span> — rarely hepatitis<br><strong>Use:</strong> Syphilis, Group A Strep. (Note: Ceftriaxone/Cefotaxime is preferred empirically for meningitis).</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="drug-name">Semi-Synthetic (Broad)</div><br>
+                        <div class="coverage-strip"><span class="cov-label">Covers ▶</span> <span class="badge b-purple">Gram +ve</span> <span class="badge b-red">Some Gram –ve</span> <span class="badge b-blue">Spirochetes</span></div>
+                    </td>
+                    <td>Ampicillin, Amoxicillin (Amoxil), Co-Amoxiclav (Augmentin)</td>
+                    <td><span class="badge b-purple">Gram +ve</span> <span class="badge b-red">Some –ve</span> (H. influenzae, E. coli, Salmonella)</td>
+                    <td><strong>RTI, UTI, otitis media.</strong><br>Co-Amoxiclav extends spectrum (adds β-lactamase protection).<br>Amoxicillin rash in EBV mononucleosis (classic MCQ).</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="drug-name">Anti-Staphylococcal</div><br>
+                        <div class="coverage-strip"><span class="cov-label">Covers ▶</span> <span class="badge b-purple">Gram +ve</span> <span class="badge b-red">MSSA (NOT MRSA)</span></div>
+                    </td>
+                    <td>Flucloxacillin (Floxapen), Cloxacillin, Dicloxacillin</td>
+                    <td><span class="badge b-purple">Gram +ve — MSSA</span> · NOT MRSA</td>
+                    <td>Staphylococcal infections (MSSA) — skin, soft tissue, osteomyelitis.<br>β-lactamase stable — penicillinase-resistant.<br><span class="badge b-orange">Hepatitis</span> (rare but notable).</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="drug-name">Extended-Spectrum (Pip-Taz)</div><br>
+                        <div class="coverage-strip"><span class="cov-label">Covers ▶</span> <span class="badge b-purple">Gram +ve</span> <span class="badge b-red">All Gram –ve</span> <span class="badge b-orange">Anaerobes</span> <span class="badge b-red">Pseudomonas ✔</span></div>
+                    </td>
+                    <td>Piperacillin-Tazobactam (Tazocin / Pip-Taz)</td>
+                    <td>Broad — Gram +ve, Gram –ve, Pseudomonas, Anaerobes</td>
+                    <td>HAP/VAP, febrile neutropenia, polymicrobial sepsis, IAI.<br>Tazobactam protects Pip from β-lactamase.<br><span class="badge b-yellow">Hyponatremia</span> (high sodium load).</td>
+                </tr>
+            </tbody>
+        </table>
+        </div><!-- tbl-wrap -->
+
+        <div class="danger" style="margin-top:14px;">
+            <div class="danger-title">⚠️ CROSS-ALLERGY</div>
+            Penicillin allergy → 10% cross-reactivity with Cephalosporins (classical teaching). True incidence with modern cephalosporins ~1–2%. If prior anaphylaxis to PCN, avoid all β-lactams and use Aztreonam (Gram –ve) or Vancomycin (Gram +ve).
+        </div>
+    </div>
+
+    <hr class="section-hr">
+
+    <!-- CEPHALOSPORINS -->
+    <div id="cephalosporins">
+        <div class="section-label">MOA 01a</div>
+        <div class="section-title">Cell Wall Inhibitors — Cephalosporins</div>
+
+        <div class="moa-header" style="background:var(--blue-dim); border-color:var(--blue);">
+            <div class="moa-num">01a</div>
+            <div>
+                <div class="moa-label"><span class="drug-name" style="font-size:1.1rem;">Cephalosporins</span></div>
+                <div class="moa-sub" style="margin-top:8px;">β-Lactam (bind PBPs) · Each generation = broader Gram –ve coverage, less Gram +ve</div>
+            </div>
+        </div>
+
+        <div class="gen-ladder">
+            <div class="gen-row" style="border-color:var(--purple); background:rgba(192,132,252,0.05);">
+                <div class="gen-num" style="color:var(--purple);">1st</div>
+                <div class="gen-name">1st Generation</div>
+                <div class="gen-drugs">Cephalexin (oral) · Cefazolin (IV) · Cephradine</div>
+                <div class="gen-note"><span class="badge b-purple">Gram +ve dominant</span> — MSSA, Strep · Weak Gram –ve · Surgical prophylaxis</div>
+            </div>
+            <div class="gen-row" style="border-color:var(--blue); background:rgba(91,155,248,0.05);">
+                <div class="gen-num" style="color:var(--blue);">2nd</div>
+                <div class="gen-name">2nd Generation</div>
+                <div class="gen-drugs">Cefuroxime · Cefoxitin · Cefaclor</div>
+                <div class="gen-note"><span class="badge b-purple">Gram +ve</span> + <span class="badge b-red">better Gram –ve</span> (H. flu, Moraxella) + some anaerobes (Cefoxitin)</div>
+            </div>
+            <div class="gen-row" style="border-color:var(--red); background:rgba(248,113,113,0.05);">
+                <div class="gen-num" style="color:var(--red);">3rd</div>
+                <div class="gen-name">3rd Generation</div>
+                <div class="gen-drugs">Ceftriaxone · Cefotaxime · Ceftazidime · Cefixime</div>
+                <div class="gen-note"><span class="badge b-red">Broad Gram –ve</span> · Crosses BBB · ✅ Meningitis</div>
+            </div>
+            <div class="gen-row" style="border-color:var(--yellow); background:rgba(251,191,36,0.05);">
+                <div class="gen-num" style="color:var(--yellow);">4th</div>
+                <div class="gen-name">4th Generation</div>
+                <div class="gen-drugs">Cefepime</div>
+                <div class="gen-note"><span class="badge b-purple">Gram +ve</span> + <span class="badge b-red">All Gram –ve + Pseudomonas</span> · Reserve</div>
+            </div>
+            <div class="gen-row" style="border-color:var(--red); background:rgba(248,113,113,0.08);">
+                <div class="gen-num" style="color:var(--red);">5th</div>
+                <div class="gen-name">5th Generation</div>
+                <div class="gen-drugs">Ceftaroline</div>
+                <div class="gen-note"><span class="badge b-red">MRSA ✔</span> <span class="badge b-orange">VRSA (in vitro)</span> — Only β-lactam FDA-approved against MRSA. VRSA activity demonstrated in vitro; clinical use limited.</div>
+            </div>
+        </div>
+
+        <div class="tbl-wrap" style="margin-top:20px;">
+        <table>
+            <thead>
+                <tr><th>Drug</th><th>Route</th><th>Spectrum</th><th>Key Uses</th><th>Notes</th></tr>
+            </thead>
+            <tbody>
+                <!-- 3RD GEN header row -->
+                <tr style="background:rgba(248,113,113,0.04);">
+                    <td style="text-align:center; font-family:'JetBrains Mono',monospace; font-weight:700; font-size:0.95rem; color:var(--red); border-right:2px solid var(--red);" rowspan="4">3<sup>rd</sup></td>
+                    <td>
+                        <div class="drug-name" style="border-color:var(--red); box-shadow:0 0 0 3px var(--red-dim);">Ceftriaxone</div>
+                        <div class="coverage-strip" style="border-color:var(--red); background:rgba(248,113,113,0.06);"><span class="cov-label" style="color:var(--red);">Covers ▶</span> <span class="badge b-red">All Gram –ve</span> <span class="badge b-purple">Gram +ve</span> <span class="badge b-blue">Gonorrhea / Syphilis</span> ✅ BBB</div>
+                    </td>
+                    <td>IV / IM</td>
+                    <td><span class="badge b-red">Broad Gram –ve</span> (Enterobacteriaceae, N. meningitidis, N. gonorrhoeae) · <span class="badge b-purple">Gram +ve</span> (Strep, NOT MRSA)</td>
+                    <td><strong>Meningitis, septicaemia, gonorrhoea (single IM dose), typhoid, CAP (hospitalised), Lyme disease</strong></td>
+                    <td><span class="badge b-green">✅ Crosses BBB</span> · Once daily (long t½ 8h) · Biliary sludge (cholestasis) in neonates · Do NOT mix with calcium-containing IV fluids</td>
+                </tr>
+                <tr style="background:rgba(248,113,113,0.04);">
+                    <td>
+                        <div class="drug-name" style="border-color:var(--red); box-shadow:0 0 0 3px var(--red-dim);">Cefotaxime</div>
+                        <div class="coverage-strip" style="border-color:var(--red); background:rgba(248,113,113,0.06);"><span class="cov-label" style="color:var(--red);">Covers ▶</span> <span class="badge b-red">All Gram –ve</span> <span class="badge b-purple">Gram +ve</span> ✅ BBB</div>
+                    </td>
+                    <td>IV / IM</td>
+                    <td><span class="badge b-red">Broad Gram –ve</span> · <span class="badge b-purple">Gram +ve</span></td>
+                    <td><strong>Meningitis</strong>, neonatal sepsis, serious Gram –ve infections, SBP (spontaneous bacterial peritonitis)</td>
+                    <td><span class="badge b-green">✅ Crosses BBB</span> · Active metabolite (desacetyl-cefotaxime) adds synergy · TDS dosing (shorter t½) · Safe in neonates — preferred over Ceftriaxone</td>
+                </tr>
+                <tr style="background:rgba(248,113,113,0.04);">
+                    <td>
+                        <div class="drug-name" style="border-color:var(--red); box-shadow:0 0 0 3px var(--red-dim);">Ceftazidime</div>
+                        <div class="coverage-strip" style="border-color:var(--red); background:rgba(248,113,113,0.06);"><span class="cov-label" style="color:var(--red);">Covers ▶</span> <span class="badge b-red">Gram –ve</span> <span class="badge b-red">Pseudomonas ✔</span> — <span class="badge b-red">Weak Gram +ve</span></div>
+                    </td>
+                    <td>IV / IM</td>
+                    <td><span class="badge b-red">Gram –ve incl. Pseudomonas aeruginosa</span> · <strong style="color:var(--red);">Poor Gram +ve</strong></td>
+                    <td><strong>Pseudomonal infections</strong> (CF exacerbations, burns, febrile neutropenia), hospital-acquired pneumonia, meningitis (Gram –ve)</td>
+                    <td>Only 3rd gen with anti-Pseudomonal activity · Sacrifices Gram +ve coverage for it · ✅ Crosses BBB</td>
+                </tr>
+                <tr style="background:rgba(248,113,113,0.04);">
+                    <td>
+                        <div class="drug-name" style="border-color:var(--red); box-shadow:0 0 0 3px var(--red-dim);">Cefixime</div>
+                        <div class="coverage-strip" style="border-color:var(--red); background:rgba(248,113,113,0.06);"><span class="cov-label" style="color:var(--red);">Covers ▶</span> <span class="badge b-red">Gram –ve</span> <span class="badge b-red">❌ No BBB</span></div>
+                    </td>
+                    <td>Oral</td>
+                    <td><span class="badge b-red">Gram –ve</span> · Strep (NOT Staph) · <strong>No Pseudomonas</strong></td>
+                    <td>Typhoid (oral step-down), gonorrhoea, UTI (community), otitis media</td>
+                    <td><span class="badge b-red">❌ Does NOT cross BBB</span> — never for meningitis · Only oral 3rd gen widely available · Good for typhoid step-down</td>
+                </tr>
+
+                <!-- 4TH GEN -->
+                <tr style="background:rgba(251,191,36,0.04);">
+                    <td style="text-align:center; font-family:'JetBrains Mono',monospace; font-weight:700; font-size:0.95rem; color:var(--yellow); border-right:2px solid var(--yellow);">4<sup>th</sup></td>
+                    <td>
+                        <div class="drug-name" style="border-color:var(--yellow); box-shadow:0 0 0 3px var(--yellow-dim);">Cefepime</div>
+                        <div class="coverage-strip" style="border-color:var(--yellow); background:rgba(251,191,36,0.06);"><span class="cov-label" style="color:var(--yellow);">Covers ▶</span> <span class="badge b-purple">Gram +ve</span> <span class="badge b-red">All Gram –ve</span> <span class="badge b-red">Pseudomonas ✔</span> <span class="badge b-red">ESBL (partial)</span></div>
+                    </td>
+                    <td>IV / IM</td>
+                    <td><span class="badge b-purple">Gram +ve</span> (Staph MSSA, Strep) + <span class="badge b-red">All Gram –ve</span> + <span class="badge b-red">Pseudomonas</span> · Better β-lactamase stability than 3rd gen</td>
+                    <td>Febrile neutropenia, hospital-acquired &amp; VAP pneumonia, Gram –ve meningitis, severe Pseudomonal infections</td>
+                    <td><span class="badge b-red">💣 Reserve antibiotic</span> · Neurotoxicity (encephalopathy, seizures) especially in renal failure · ✅ Crosses BBB</td>
+                </tr>
+
+                <!-- 5TH GEN -->
+                <tr style="background:rgba(248,113,113,0.07); border:1px solid var(--red);">
+                    <td style="text-align:center; font-family:'JetBrains Mono',monospace; font-weight:700; font-size:0.95rem; color:var(--red); border-right:2px solid var(--red);">5<sup>th</sup></td>
+                    <td>
+                        <div class="drug-name" style="border-color:var(--red); box-shadow:0 0 0 3px var(--red-dim);">Ceftaroline</div>
+                        <div class="coverage-strip" style="border-color:var(--red); background:rgba(248,113,113,0.1);"><span class="cov-label" style="color:var(--red);">Covers ▶</span> <span class="badge b-purple">Gram +ve</span> <span class="badge b-red">MRSA ✔</span> <span class="badge b-orange">VRSA (in vitro)</span> <span class="badge b-red">Gram –ve</span> — <strong style="color:var(--text-dim); font-size:0.72rem;">No Pseudomonas</strong></div>
+                    </td>
+                    <td>IV</td>
+                    <td><span class="badge b-red">MRSA ✔</span> <span class="badge b-orange">VRSA (in vitro)</span> · <span class="badge b-purple">Broad Gram +ve</span> · <span class="badge b-red">Gram –ve</span> (NOT Pseudomonas / Acinetobacter)</td>
+                    <td><strong>MRSA skin &amp; soft tissue, MRSA pneumonia, MRSA bacteraemia</strong> (3rd-line after Vancomycin/Daptomycin, Linezolid per IDSA)</td>
+                    <td><span class="badge b-red">🏆 Only β-lactam that kills MRSA</span> · Binds altered PBP2a (MRSA's resistance target) · No Pseudomonal coverage · Generally well tolerated</td>
+                </tr>
+            </tbody>
+        </table>
+        </div><!-- tbl-wrap -->
+
+        <div class="pearl" style="margin-top:14px;">
+            <div class="pearl-title">🔬 CEPHALOSPORIN CROSS-ALLERGY RULE</div>
+            True cross-reactivity with Penicillin allergy: ~1–2% only (was historically overestimated at 10%). For 3rd/4th gen, risk is &lt;1%. Safe to use in most PCN-allergic patients unless prior <em>anaphylaxis</em> to PCN — in that case use Aztreonam (Gram –ve) or Vancomycin (Gram +ve).
+        </div>
+    </div>
+
+    <!-- ══ CARBAPENEMS ══ -->
+    <hr class="section-hr">
+    <div class="section-label">MOA 01b</div>
+    <div class="section-title">Cell Wall Inhibitors — Carbapenems (Last Resort β-Lactams)</div>
+    <div id="carbapenems">
+        <div class="moa-header" style="background:var(--red-dim); border-color:var(--red);">
+            <div class="moa-num">💣</div>
+            <div>
+                <div class="moa-label"><span class="drug-name" style="border-color:var(--red); box-shadow:0 0 0 3px var(--red-dim); font-size:1.1rem;">Carbapenems</span> <span style="font-size:0.78rem; color:var(--text-dim); font-weight:400; margin-left:8px;">(Last-Resort β-Lactams)</span></div>
+                <div class="moa-sub" style="margin-top:6px;">Broadest β-lactam spectrum · Resist most β-lactamases · Reserve for ESBL / MDR organisms · Same MOA: transpeptidase inhibition</div>
+                <div class="coverage-strip" style="border-color:var(--red); background:rgba(248,113,113,0.08); margin-top:10px;"><span class="cov-label" style="color:var(--red);">CLASS Covers ▶</span> <span class="badge b-purple">Gram +ve</span> <span class="badge b-red">All Gram –ve</span> <span class="badge b-orange">Anaerobes</span> <span class="badge b-red">ESBL producers</span> — NOT MRSA, NOT fungi</div>
+            </div>
+        </div>
+
+        <div class="tbl-wrap">
+        <table>
+            <thead>
+                <tr><th>Drug</th><th>Route</th><th>Coverage</th><th>Key Uses</th><th>Notes / Special Points</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="drug-name" style="border-color:var(--red); box-shadow:0 0 0 3px var(--red-dim);">Imipenem-Cilastatin</div>
+                        <div class="coverage-strip" style="border-color:var(--red); background:rgba(248,113,113,0.06);"><span class="cov-label" style="color:var(--red);">Covers ▶</span> <span class="badge b-purple">Gram +ve</span> <span class="badge b-red">All Gram –ve</span> <span class="badge b-orange">Anaerobes</span> <span class="badge b-red">Pseudomonas ✔</span></div>
+                    </td>
+                    <td>IV</td>
+                    <td>Broadest spectrum of any antibiotic. Covers Gram +ve, Gram –ve, Pseudomonas, Enterococcus, Anaerobes</td>
+                    <td>Polymicrobial sepsis, ESBL UTI/IAI, Pseudomonal HAP/VAP, febrile neutropenia</td>
+                    <td>Cilastatin blocks renal dehydropeptidase → prevents nephrotoxic metabolite · <span class="badge b-red">⚠️ Lowers seizure threshold</span> (most epileptogenic carbapenem) · NOT for meningitis (seizure risk)</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="drug-name" style="border-color:var(--red); box-shadow:0 0 0 3px var(--red-dim);">Meropenem</div>
+                        <div class="coverage-strip" style="border-color:var(--red); background:rgba(248,113,113,0.06);"><span class="cov-label" style="color:var(--red);">Covers ▶</span> <span class="badge b-purple">Gram +ve</span> <span class="badge b-red">All Gram –ve</span> <span class="badge b-orange">Anaerobes</span> <span class="badge b-red">Pseudomonas ✔</span> ✅ BBB</div>
+                    </td>
+                    <td>IV</td>
+                    <td>Same as Imipenem but better Gram –ve and better CNS safety</td>
+                    <td><strong>Meningitis (Gram –ve), ESBL sepsis, MDR HAP/VAP, polymicrobial IAI</strong></td>
+                    <td><span class="badge b-green">✅ Safe for meningitis</span> (preferred carbapenem for CNS) · Less epileptogenic than Imipenem · Stable without Cilastatin · Drug of choice for ESBL producers</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="drug-name" style="border-color:var(--red); box-shadow:0 0 0 3px var(--red-dim);">Ertapenem</div>
+                        <div class="coverage-strip" style="border-color:var(--red); background:rgba(248,113,113,0.06);"><span class="cov-label" style="color:var(--red);">Covers ▶</span> <span class="badge b-purple">Gram +ve</span> <span class="badge b-red">Gram –ve</span> <span class="badge b-orange">Anaerobes</span> — <strong style="color:var(--red); font-size:0.72rem;">NO Pseudomonas / Acinetobacter / Enterococcus ("APE")</strong></div>
+                    </td>
+                    <td>IV / IM</td>
+                    <td>Gram +ve (not MRSA/Enterococcus), Gram –ve Enterobacteriaceae, Anaerobes · <strong>NO Pseudomonas, NO Acinetobacter</strong></td>
+                    <td>Community-acquired ESBL infections (UTI, IAI), diabetic foot, polymicrobial wound infections — when Pseudomonas is unlikely</td>
+                    <td><span class="badge b-yellow">⚠️ APE mnemonic</span> — lacks <strong>A</strong>cinetobacter, <strong>P</strong>seudomonas, <strong>E</strong>nterococcus coverage · Advantage: once-daily dosing (long t½) · Can be given IM (unlike others)</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="drug-name" style="border-color:var(--red); box-shadow:0 0 0 3px var(--red-dim);">Doripenem</div>
+                        <div class="coverage-strip" style="border-color:var(--red); background:rgba(248,113,113,0.06);"><span class="cov-label" style="color:var(--red);">Covers ▶</span> <span class="badge b-purple">Gram +ve</span> <span class="badge b-red">All Gram –ve</span> <span class="badge b-red">Pseudomonas ✔✔</span> <span class="badge b-orange">Anaerobes</span></div>
+                    </td>
+                    <td>IV</td>
+                    <td>Similar to Meropenem; strongest Pseudomonal activity of all carbapenems</td>
+                    <td>HAP/VAP due to Pseudomonas, complicated UTI, IAI</td>
+                    <td>Best anti-Pseudomonal carbapenem · Less commonly used (limited advantage over Meropenem in most settings)</td>
+                </tr>
+            </tbody>
+        </table>
+        </div><!-- tbl-wrap -->
+
+        <div class="danger" style="margin-top:14px;">
+            <div class="danger-title">⚠️ CARBAPENEM RESISTANCE — KPC / MBL</div>
+            Klebsiella pneumoniae carbapenemase (KPC) and metallo-β-lactamases (NDM, VIM, IMP) hydrolyse carbapenems. Options: <strong>Colistin, Ceftazidime-Avibactam, Cefiderocol</strong>. Refer immediately to ID specialist.
+        </div>
+    </div>
+
+    <!-- ══ VANCOMYCIN ══ -->
+    <div class="card" style="margin-top:24px; border-color:var(--red);">
+        <div class="card-title"><span class="accent-bar" style="background:var(--red)"></span><span class="drug-name" style="border-color:var(--red); box-shadow:0 0 0 3px var(--red-dim); font-size:1.05rem;">Vancomycin</span> <span style="font-size:0.75rem; color:var(--text-dim); font-weight:400; margin-left:6px;">(Glycopeptide · D-Ala-D-Ala binding)</span></div>
+        <div class="coverage-strip" style="border-color:var(--red); background:rgba(248,113,113,0.06);"><span class="cov-label" style="color:var(--red);">Covers ▶</span> <span class="badge b-purple">Gram +ve ONLY</span> <span class="badge b-red">MRSA / VRSA</span> <span class="badge b-orange">C. diff (oral)</span> — <strong style="color:var(--text-dim); font-size:0.72rem;">NO Gram –ve activity</strong></div>
+        <div class="se-item" style="margin-top:10px;"><div class="se-dot" style="background:var(--red)"></div><div>1st line MRSA; oral form for <em>C. diff</em></div></div>
+        <div class="danger" style="margin-top:8px;"><div class="danger-title">⚡ RED MAN SYNDROME</div>Too-rapid infusion → flushing, hypotension, rash. <em>Not</em> allergy — slow the drip, dilute properly.</div>
+        <div class="danger"><div class="danger-title">☠️ TOXICITY</div>Nephrotoxic + Ototoxic. Monitor trough levels and creatinine.</div>
+    </div>
+
+    <!-- ══ OTHER IMPORTANT ANTIBIOTICS ══ -->
+    <hr class="section-hr">
+    <div id="other">
+        <div class="section-label">Additional Agents</div>
+        <div class="section-title">Other Important Antibiotics</div>
+
+        <div class="tbl-wrap">
+        <table>
+            <thead>
+                <tr><th>Drug</th><th>Class / MOA</th><th>Coverage</th><th>Key Uses</th><th>Toxicity / C/I</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="drug-name" style="border-color:var(--cyan); box-shadow:0 0 0 3px var(--cyan-dim);">Aztreonam</div>
+                        <div class="coverage-strip" style="border-color:var(--cyan); background:rgba(56,189,248,0.06);"><span class="cov-label" style="color:var(--cyan);">Covers ▶</span> <span class="badge b-red">Gram –ve ONLY</span> <span class="badge b-red">Pseudomonas ✔</span> — <strong style="font-size:0.7rem; color:var(--text-dim);">NO Gram +ve, NO anaerobes</strong></div>
+                    </td>
+                    <td>Monobactam · β-Lactam (binds PBP3) · Bactericidal</td>
+                    <td><span class="badge b-red">Gram –ve only</span> including Pseudomonas · NO Gram +ve · NO anaerobes</td>
+                    <td>Gram –ve infections in <strong>PCN/cephalosporin-allergic</strong> patients · UTI, HAP, septicaemia (Gram –ve) · CF exacerbations (nebulised form)</td>
+                    <td><span class="badge b-green">✅ Safe in Penicillin allergy</span> (no cross-reactivity except Ceftazidime) · No nephrotoxicity · Add Metronidazole for anaerobes · Add Vancomycin for Gram +ve coverage</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="drug-name" style="border-color:var(--orange); box-shadow:0 0 0 3px var(--orange-dim);">Daptomycin</div>
+                        <div class="coverage-strip" style="border-color:var(--orange); background:rgba(251,146,60,0.06);"><span class="cov-label" style="color:var(--orange);">Covers ▶</span> <span class="badge b-purple">Gram +ve ONLY</span> <span class="badge b-red">MRSA / VRE</span> — <strong style="font-size:0.7rem; color:var(--text-dim);">NOT for pneumonia</strong></div>
+                    </td>
+                    <td>Lipopeptide · Disrupts bacterial cell membrane → rapid depolarisation → bactericidal</td>
+                    <td><span class="badge b-purple">Gram +ve only</span> · MRSA, VRSA, VRE (vancomycin-resistant Enterococcus) · Excellent bactericidal activity</td>
+                    <td>MRSA bacteraemia &amp; right-sided endocarditis (1st line). VRE infections, skin/soft tissue MRSA, MRSA osteomyelitis. ⚠️ NOT approved for left-sided endocarditis (lung surfactant inactivation risk if pneumonia component; use vancomycin instead for left-sided).</td>
+                    <td><span class="badge b-red">⚠️ INACTIVATED BY SURFACTANT</span> — <strong>NEVER use for pneumonia</strong> (lung surfactant destroys it) · Myopathy / rhabdomyolysis (monitor CK) · C/I: statins (↑ myopathy risk)</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="drug-name" style="border-color:var(--green); box-shadow:0 0 0 3px var(--green-dim);">Rifampicin <span style="font-size:0.7rem; font-weight:400;">(Rifampin)</span></div>
+                        <div class="coverage-strip" style="border-color:var(--green); background:rgba(52,211,153,0.06);"><span class="cov-label" style="color:var(--green);">Covers ▶</span> <span class="badge b-green">TB (1st line)</span> <span class="badge b-purple">Gram +ve</span> <span class="badge b-red">N. meningitidis</span> <span class="badge b-cyan">Atypicals</span></div>
+                    </td>
+                    <td>Rifamycin · Inhibits bacterial RNA polymerase (β-subunit) → blocks transcription · Bactericidal</td>
+                    <td>Mycobacteria (TB, leprosy), <em>N. meningitidis</em>, <em>S. aureus</em> (MSSA &amp; MRSA — adjunct only), Brucella</td>
+                    <td><strong>TB (RIPE regimen), meningococcal prophylaxis</strong> (close contacts), leprosy, Brucellosis, MRSA adjunct (never monotherapy), prosthetic joint / biofilm infections</td>
+                    <td><span class="badge b-red">🔴 Orange-red discolouration</span> of urine, tears, sweat (warn patient!) · Hepatotoxic · <strong>Potent CYP450 inducer</strong> — reduces efficacy of OCP, warfarin, cyclosporin, ARVs · <span class="badge b-red">NEVER monotherapy</span> → rapid resistance</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="drug-name" style="border-color:var(--yellow); box-shadow:0 0 0 3px var(--yellow-dim);">Nitrofurantoin <span style="font-size:0.7rem; font-weight:400;">(Macrobid)</span></div>
+                        <div class="coverage-strip" style="border-color:var(--yellow); background:rgba(251,191,36,0.06);"><span class="cov-label" style="color:var(--yellow);">Covers ▶</span> <span class="badge b-purple">Gram +ve (UTI)</span> <span class="badge b-red">Gram –ve (UTI)</span> — <strong style="font-size:0.7rem; color:var(--text-dim);">LOWER UTI ONLY</strong></div>
+                    </td>
+                    <td>Nitrofuran · Reduced to toxic radical by bacterial reductases → damages DNA, ribosomes, enzymes · Bactericidal (in urine)</td>
+                    <td><em>E. coli</em> (main UTI pathogen), Enterococcus, Staphylococci · NOT Pseudomonas, Proteus, Klebsiella (intrinsically resistant)</td>
+                    <td><strong>Uncomplicated lower UTI only</strong> · Prophylaxis for recurrent UTI · Safe in pregnancy (except at term)</td>
+                    <td><span class="badge b-red">C/I: Renal failure</span> (eGFR &lt;45 mL/min per ACP; use with caution eGFR 30–44; avoid eGFR &lt;30) — drug doesn't concentrate in urine + toxic metabolite accumulates · <span class="badge b-red">C/I: Term pregnancy</span> (neonatal haemolysis) · Pulmonary fibrosis (chronic use) · Brown urine · NOT for pyelonephritis (no tissue levels)</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="drug-name" style="border-color:var(--purple); box-shadow:0 0 0 3px var(--purple-dim);">Colistin <span style="font-size:0.7rem; font-weight:400;">(Polymyxin E)</span></div>
+                        <div class="coverage-strip" style="border-color:var(--purple); background:rgba(192,132,252,0.06);"><span class="cov-label" style="color:var(--purple);">Covers ▶</span> <span class="badge b-red">MDR Gram –ve ONLY</span> <span class="badge b-red">Pseudomonas / Acinetobacter / Klebsiella</span></div>
+                    </td>
+                    <td>Polymyxin · Disrupts outer membrane of Gram –ve bacteria → cell lysis · Bactericidal</td>
+                    <td>MDR/XDR Gram –ve only — <em>Pseudomonas, Acinetobacter, Klebsiella</em> (carbapenem-resistant strains) · NO Gram +ve · NO anaerobes</td>
+                    <td><strong>Last resort for carbapenem-resistant Gram –ve</strong> · Inhaled form for CF / VAP (Pseudomonas) · Rarely used systemically unless no alternatives</td>
+                    <td><span class="badge b-red">☠️ NEPHROTOXIC</span> (dose-limiting) · Neurotoxicity (paresthesias, neuromuscular blockade) · Must monitor renal function daily · Drug of last resort — ID consult mandatory</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="drug-name" style="border-color:var(--blue); box-shadow:0 0 0 3px var(--blue-dim);">Fosfomycin</div>
+                        <div class="coverage-strip" style="border-color:var(--blue); background:rgba(91,155,248,0.06);"><span class="cov-label" style="color:var(--blue);">Covers ▶</span> <span class="badge b-purple">Gram +ve</span> <span class="badge b-red">Gram –ve (UTI)</span> <span class="badge b-red">ESBL E. coli ✔</span></div>
+                    </td>
+                    <td>Phosphonic acid · Inhibits MurA (first step of peptidoglycan synthesis) · Bactericidal</td>
+                    <td>E. coli (incl. ESBL), Enterococcus faecalis, Staphylococci · Good for multi-drug resistant UTI pathogens</td>
+                    <td>Uncomplicated UTI (<strong>single-dose oral</strong>), ESBL UTI (oral option), recurrent UTI prophylaxis</td>
+                    <td>Single 3 g oral dose for uncomplicated UTI · Very well tolerated · Excellent for ESBL-producing E. coli · GI upset (mild) · Not suitable for systemic infections</td>
+                </tr>
+            </tbody>
+        </table>
+        </div><!-- tbl-wrap -->
+    </div>
+
+    <!-- ══ MOA 02: PROTEIN SYNTHESIS — 30S ══ -->
+    <hr class="section-hr">
+    <div class="section-label">MOA 02</div>
+    <div class="section-title">Protein Synthesis Inhibitors — 30S Ribosome</div>
+
+    <!-- AMINOGLYCOSIDES -->
+    <div id="aminoglycosides">
+        <div class="moa-header" style="background:var(--red-dim); border-color:var(--red);">
+            <div class="moa-num">30S</div>
+            <div>
+                <div class="moa-label"><span class="drug-name" style="border-color:var(--red); box-shadow:0 0 0 3px var(--red-dim); font-size:1.1rem;">Aminoglycosides</span></div>
+                <div class="moa-sub" style="margin-top:6px;">Bind 30S → misread mRNA → nonfunctional proteins → bactericidal</div>
+                <div class="coverage-strip" style="border-color:var(--red); background:rgba(248,113,113,0.06); margin-top:10px;"><span class="cov-label" style="color:var(--red);">Covers ▶</span> <span class="badge b-red">Gram –ve (primary)</span> — NOT anaerobes (need O₂ for uptake)</div>
+            </div>
+        </div>
+
+        <div class="tbl-wrap">
+        <table>
+            <thead><tr><th>Drug</th><th>Main Use</th><th>Class Toxicity</th></tr></thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="drug-name" style="border-color:var(--red); box-shadow:0 0 0 3px var(--red-dim);">Gentamicin</div>
+                        <div class="coverage-strip" style="border-color:var(--red); background:rgba(248,113,113,0.06);"><span class="cov-label" style="color:var(--red);">Covers ▶</span> <span class="badge b-red">Gram –ve</span></div>
+                    </td>
+                    <td>Gram –ve sepsis, UTI (IV), synergy with β-lactam</td>
+                    <td rowspan="3">
+                        <span class="badge b-red">Nephrotoxic</span> → ARF<br>
+                        <span class="badge b-red">Ototoxic</span> → irreversible hearing loss<br>
+                        <span class="badge b-orange">NM blockade</span> (↓ presynaptic ACh release)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="drug-name" style="border-color:var(--red); box-shadow:0 0 0 3px var(--red-dim);">Amikacin</div>
+                        <div class="coverage-strip" style="border-color:var(--red); background:rgba(248,113,113,0.06);"><span class="cov-label" style="color:var(--red);">Covers ▶</span> <span class="badge b-red">MDR Gram –ve</span> <span class="badge b-green">TB (2nd)</span></div>
+                    </td>
+                    <td>MDR Gram –ve, TB (2nd line)</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="drug-name" style="border-color:var(--red); box-shadow:0 0 0 3px var(--red-dim);">Streptomycin</div>
+                        <div class="coverage-strip" style="border-color:var(--red); background:rgba(248,113,113,0.06);"><span class="cov-label" style="color:var(--red);">Covers ▶</span> <span class="badge b-orange">TB (2nd line)</span> <span class="badge b-red">Gram –ve</span></div>
+                    </td>
+                    <td>TB (2nd line — replaced by Ethambutol in standard RIPE regimen), Brucellosis, Plague</td>
+                </tr>
+            </tbody>
+        </table>
+        </div><!-- tbl-wrap -->
+
+        <div class="corrected">
+            <div class="corrected-title">✏️ CORRECTED — MYASTHENIA-LIKE SYNDROME MECHANISM</div>
+            Aminoglycosides block <strong>presynaptic ACh release</strong> at the NMJ — NOT by binding ACh receptors (that is the mechanism of MG itself and competitive NM blockers like tubocurarine).<br>
+            Result: ↓ ACh released → muscle weakness → <strong>respiratory paralysis</strong> if pre-existing RF or MG.
+        </div>
+        <div class="danger"><div class="danger-title">🚫 ABSOLUTE C/I</div>Respiratory failure · Myasthenia Gravis · Pregnancy (ototoxicity to fetus)</div>
+    </div>
+
+    <!-- TETRACYCLINES -->
+    <div id="tetracyclines" style="margin-top:28px;">
+        <div class="moa-header" style="background:var(--orange-dim); border-color:var(--orange);">
+            <div class="moa-num">30S</div>
+            <div>
+                <div class="moa-label"><span class="drug-name" style="border-color:var(--orange); box-shadow:0 0 0 3px var(--orange-dim); font-size:1.1rem;">Tetracyclines</span></div>
+                <div class="moa-sub" style="margin-top:6px;">Block aminoacyl-tRNA binding to 30S ribosome → bacteriostatic</div>
+                <div class="coverage-strip" style="border-color:var(--orange); background:rgba(251,146,60,0.06); margin-top:10px;"><span class="cov-label" style="color:var(--orange);">Covers ▶</span> <span class="badge b-cyan">All Atypicals (wall-less &amp; intracellular)</span> <span class="badge b-blue">Spirochetes</span> <span class="badge b-purple">Some Gram +ve</span></div>
+            </div>
+        </div>
+
+        <div class="tbl-wrap">
+        <table>
+            <thead><tr><th>Drug</th><th>Key Uses</th><th>Notes</th></tr></thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="drug-name" style="border-color:var(--orange); box-shadow:0 0 0 3px var(--orange-dim);">Doxycycline</div>
+                        <div class="coverage-strip" style="border-color:var(--orange); background:rgba(251,146,60,0.06);"><span class="cov-label" style="color:var(--orange);">Covers ▶</span> <span class="badge b-cyan">All Atypicals</span> <span class="badge b-blue">Spirochetes</span> <span class="badge b-purple">Some Gram +ve</span></div>
+                    </td>
+                    <td>Atypicals (Chlamydia, Rickettsia, Mycoplasma), Lyme, Brucellosis, Malaria prophylaxis</td>
+                    <td>Most used; once-daily; safe in renal failure</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="drug-name" style="border-color:var(--orange); box-shadow:0 0 0 3px var(--orange-dim);">Minocycline</div>
+                        <div class="coverage-strip" style="border-color:var(--orange); background:rgba(251,146,60,0.06);"><span class="cov-label" style="color:var(--orange);">Covers ▶</span> <span class="badge b-cyan">Atypicals</span> <span class="badge b-red">MRSA (limited)</span></div>
+                    </td>
+                    <td>Acne, MRSA (limited), Nocardia</td>
+                    <td>Best CNS penetration; vestibular SE</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="drug-name" style="border-color:var(--orange); box-shadow:0 0 0 3px var(--orange-dim);">Oxytetracycline</div>
+                        <div class="coverage-strip" style="border-color:var(--orange); background:rgba(251,146,60,0.06);"><span class="cov-label" style="color:var(--orange);">Covers ▶</span> <span class="badge b-cyan">Atypicals</span> — largely replaced</div>
+                    </td>
+                    <td>Broad atypical coverage</td>
+                    <td>Largely replaced by Doxycycline</td>
+                </tr>
+            </tbody>
+        </table>
+        </div><!-- tbl-wrap -->
+
+        <div class="corrected">
+            <div class="corrected-title">✏️ CORRECTED — TOOTH STAINING COLOR</div>
+            Tetracyclines → <strong>yellow-brown to grey</strong> discoloration (NOT bluish).<br>
+            Mechanism: chelates Ca²⁺ → deposits in developing teeth/bone → permanent staining.<br>
+            Grey-blue staining = <strong>Minocycline-specific</strong> (rare, mainly adult skin/mucosa).
+        </div>
+        <div class="danger"><div class="danger-title">🚫 CONTRAINDICATED</div>Pregnancy · Children &lt;8 yrs (enamel disruption) · Renal failure <em>(except Doxycycline — safe)</em></div>
+        <div class="warn"><div class="warn-title">⚠️ OTHER SE</div>Photosensitivity · Hepatitis · Oesophageal ulceration (take with full glass of water, stay upright)</div>
+    </div>
+
+    <!-- ══ MOA 03: PROTEIN SYNTHESIS — 50S ══ -->
+    <hr class="section-hr">
+    <div class="section-label">MOA 03</div>
+    <div class="section-title">Protein Synthesis Inhibitors — 50S Ribosome</div>
+
+    <div id="50s">
+        <div class="moa-header" style="background:var(--green-dim); border-color:var(--green);">
+            <div class="moa-num">50S</div>
+            <div>
+                <div class="moa-label"><span class="drug-name" style="border-color:var(--green); box-shadow:0 0 0 3px var(--green-dim); font-size:1.1rem;">50S Ribosome Inhibitors</span></div>
+                <div class="moa-sub" style="margin-top:6px;">Chloramphenicol · Macrolides · Clindamycin · Linezolid</div>
+            </div>
+        </div>
+
+        <div class="mnemonic-box">
+            <div class="mnemonic-title">🧠 MNEMONIC — "C MAC L"</div>
+            <div class="mnemonic-letters">
+                <div class="ml"><div class="ml-letter">C</div><div class="ml-word">Chlor-amphenicol</div></div>
+                <div class="ml"><div class="ml-letter">M</div><div class="ml-word">Macrolides</div></div>
+                <div class="ml"><div class="ml-letter">A</div><div class="ml-word">Azithromycin</div></div>
+                <div class="ml"><div class="ml-letter">C</div><div class="ml-word">Clindamycin</div></div>
+                <div class="ml"><div class="ml-letter">L</div><div class="ml-word">Linezolid</div></div>
+            </div>
+        </div>
+
+        <div class="tbl-wrap">
+        <table>
+            <thead><tr><th>Drug / Class</th><th>Spectrum</th><th>Key Use</th><th>Toxicity</th></tr></thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="drug-name" style="border-color:var(--green); box-shadow:0 0 0 3px var(--green-dim);">Chloramphenicol</div>
+                        <div class="coverage-strip" style="border-color:var(--green); background:rgba(52,211,153,0.06);"><span class="cov-label" style="color:var(--green);">Covers ▶</span> <span class="badge b-purple">Gram +ve</span> <span class="badge b-red">Gram –ve</span> <span class="badge b-cyan">Rickettsia</span> <span class="badge b-orange">Anaerobes</span></div>
+                    </td>
+                    <td><span class="badge b-purple">Gram +ve</span> <span class="badge b-red">Gram –ve</span> <span class="badge b-cyan">Rickettsia</span> Anaerobes</td>
+                    <td>Typhoid (alt), Bacterial meningitis (Pen allergy), Rickettsial disease</td>
+                    <td><span class="badge b-red">Aplastic anemia</span> (idiosyncratic, irreversible)<br><span class="badge b-red">Gray Baby Syndrome</span> (neonates — see below)</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="drug-name" style="border-color:var(--green); box-shadow:0 0 0 3px var(--green-dim);">Macrolides</div>
+                        <div style="font-size:0.74rem; color:var(--text-dim); margin:4px 0 4px 2px;">Erythromycin · Azithromycin · Clarithromycin</div>
+                        <div class="coverage-strip" style="border-color:var(--green); background:rgba(52,211,153,0.06);"><span class="cov-label" style="color:var(--green);">Covers ▶</span> <span class="badge b-purple">All Gram +ve</span> <span class="badge b-red">Some –ve</span> <span class="badge b-cyan">All Atypicals</span></div>
+                    </td>
+                    <td><span class="badge b-purple">All Gram +ve</span> <span class="badge b-red">Some –ve</span> <span class="badge b-cyan">All Atypicals</span></td>
+                    <td>Atypical pneumonia, CAP (Pen-allergic), H. pylori (Clarithromycin triple), STIs</td>
+                    <td><span class="badge b-green">Generally safe</span><br>Erythromycin: GI motility ↑ (nausea/vomiting)<br>QT prolongation (Clarithromycin/Azithromycin — rare)</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="drug-name" style="border-color:var(--green); box-shadow:0 0 0 3px var(--green-dim);">Clindamycin</div>
+                        <div class="coverage-strip" style="border-color:var(--green); background:rgba(52,211,153,0.06);"><span class="cov-label" style="color:var(--green);">Covers ▶</span> <span class="badge b-orange">Anaerobes</span> <span class="badge b-purple">Gram +ve</span> <span class="badge b-red">MRSA (some)</span></div>
+                    </td>
+                    <td><span class="badge b-orange">Anaerobes</span> <span class="badge b-purple">Gram +ve</span> <span class="badge b-red">MRSA</span></td>
+                    <td>Aspiration pneumonia, Skin/soft tissue MRSA, Dental infections</td>
+                    <td>Highest C. diff risk of all antibiotics → PMC</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="drug-name" style="border-color:var(--green); box-shadow:0 0 0 3px var(--green-dim);">Linezolid</div>
+                        <div class="coverage-strip" style="border-color:var(--green); background:rgba(52,211,153,0.06);"><span class="cov-label" style="color:var(--green);">Covers ▶</span> <span class="badge b-purple">Gram +ve</span> <span class="badge b-red">MRSA / VRSA</span> <span class="badge b-orange">Anaerobes</span></div>
+                    </td>
+                    <td><span class="badge b-purple">Gram +ve</span> <span class="badge b-red">MRSA / VRSA</span> <span class="badge b-orange">Anaerobes</span></td>
+                    <td>MRSA (alt to Vancomycin), VRE, MDR-TB component</td>
+                    <td>Thrombocytopenia · Serotonin syndrome (with SSRIs) · Optic neuropathy (prolonged)</td>
+                </tr>
+            </tbody>
+        </table>
+        </div><!-- tbl-wrap -->
+
+        <div class="corrected">
+            <div class="corrected-title">✏️ CORRECTED — GRAY BABY SYNDROME MECHANISM</div>
+            NOT a bilirubin problem. Chloramphenicol accumulates in neonates because:<br>
+            <strong>(1)</strong> Immature hepatic UDP-glucuronosyltransferase → cannot conjugate/inactivate drug<br>
+            <strong>(2)</strong> Immature renal excretion → further drug buildup<br>
+            Result: toxic levels → mitochondrial protein synthesis inhibition → ↓ cardiac output, metabolic acidosis, ashen-grey colour, cardiovascular collapse → death within 48 h.
+        </div>
+    </div>
+
+    <!-- ══ MOA 04: DNA SYNTHESIS INHIBITORS ══ -->
+    <hr class="section-hr">
+    <div class="section-label">MOA 04</div>
+    <div class="section-title">DNA Synthesis Inhibitors</div>
+
+    <div id="dna">
+        <div class="tbl-wrap">
+        <table>
+            <thead><tr><th>Class</th><th>Drugs</th><th>Spectrum</th><th>Toxicity / C/I</th></tr></thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="drug-name" style="border-color:var(--cyan); box-shadow:0 0 0 3px var(--cyan-dim);">Co-Trimoxazole</div>
+                        <div style="font-size:0.72rem; color:var(--text-dim); margin:4px 0 4px 2px;">Sulfonamides + Trimethoprim (Septran / Bactrim)</div>
+                        <div class="coverage-strip" style="border-color:var(--cyan); background:rgba(56,189,248,0.06);"><span class="cov-label" style="color:var(--cyan);">Covers ▶</span> <span class="badge b-purple">Gram +ve</span> <span class="badge b-red">Gram –ve</span> <span class="badge b-cyan">PCP · Nocardia · Toxoplasma</span></div>
+                    </td>
+                    <td>Co-Trimoxazole (Septran / Bactrim)<br><em>SMX + TMP (5:1 dose; synergistic 20:1 serum ratio)</em></td>
+                    <td>Broad — but &gt;90% resistance clinically.<br>Useful for: UTI, PCP, Nocardia, Toxoplasma, Listeria</td>
+                    <td>Megaloblastic anemia (↓ folate) · SJS · Nephritis<br>
+                        <span class="badge b-red">C/I in Pregnancy:</span><br>
+                        • 1st Tri: Folate antagonism (TMP) → Neural tube defect risk<br>
+                        • 3rd Tri: Bilirubin displacement (SMX) → Neonatal kernicterus
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="drug-name" style="border-color:var(--cyan); box-shadow:0 0 0 3px var(--cyan-dim);">Quinolones</div>
+                        <div style="font-size:0.72rem; color:var(--text-dim); margin:4px 0 4px 2px;">DNA Gyrase / Topoisomerase II&amp;IV inhibitors</div>
+                        <div class="coverage-strip" style="border-color:var(--cyan); background:rgba(56,189,248,0.06);"><span class="cov-label" style="color:var(--cyan);">Covers ▶</span> <span class="badge b-red">All Gram –ve</span> <span class="badge b-purple">Gram +ve</span> <span class="badge b-cyan">Atypicals (Levo/Moxi)</span></div>
+                    </td>
+                    <td>Ciprofloxacin (GI/urinary)<br>Levofloxacin (respiratory)<br>Moxifloxacin (resp / TB)</td>
+                    <td><span class="badge b-red">Gram –ve (All)</span> &gt; <span class="badge b-purple">Gram +ve</span><br>Levo/Moxi also cover atypicals</td>
+                    <td>
+                        Neurotoxic → <span class="badge b-red">C/I: Epilepsy</span> (↓ seizure threshold)<br>
+                        <span class="badge b-red">C/I: Children</span> (cartilage toxicity — classic MCQ)<br>
+                        <span class="badge b-red">C/I: Pregnancy</span><br>
+                        <span class="badge b-orange">Tendinopathy / Achilles rupture</span> (esp. + steroids)<br>
+                        QT prolongation (Moxifloxacin especially)
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </div><!-- tbl-wrap -->
+
+        <div class="corrected">
+            <div class="corrected-title">✏️ CORRECTED — QUINOLONE CONTRAINDICATIONS (original notes were incomplete)</div>
+            Original only listed Epilepsy. Also C/I: <strong>Children</strong> (articular cartilage) · <strong>Pregnancy</strong> · <strong>Myasthenia Gravis</strong> (worsens NM blockade) · <strong>QT-prolonging co-drugs</strong> (esp. Moxifloxacin)
+        </div>
+    </div>
+
+    <!-- ══ MOA 05: METRONIDAZOLE ══ -->
+    <hr class="section-hr">
+    <div class="section-label">MOA 05</div>
+    <div class="section-title">Free Radical DNA Damage</div>
+
+    <div id="metro">
+        <div class="moa-header" style="background:var(--orange-dim); border-color:var(--orange);">
+            <div class="moa-num">05</div>
+            <div>
+                <div class="moa-label"><span class="drug-name" style="border-color:var(--orange); box-shadow:0 0 0 3px var(--orange-dim); font-size:1.05rem;">Metronidazole</span> <span style="font-size:0.78rem; color:var(--text-dim); font-weight:400; margin-left:8px;">(Flagyl)</span></div>
+                <div class="moa-sub" style="margin-top:6px;">Prodrug → enters anaerobic/protozoal cells → reduced to toxic nitro-radical → DNA strand breaks → bactericidal</div>
+                <div class="coverage-strip" style="border-color:var(--orange); background:rgba(251,146,60,0.08); margin-top:10px;"><span class="cov-label" style="color:var(--orange);">Covers ▶</span> <span class="badge b-orange">All Anaerobes</span> <span class="badge b-cyan">Protozoa (Giardia, Entamoeba, Trichomonas)</span> <span class="badge b-orange">C. diff (oral)</span></div>
+            </div>
+        </div>
+
+        <div class="info">
+            <div class="info-title">⚡ WHY ONLY ANAEROBES?</div>
+            Aerobic bacteria and human cells do NOT reduce the drug to its active toxic form — only anaerobic and microaerophilic organisms do. This is what gives Metronidazole its selective toxicity.
+        </div>
+
+        <div class="tbl-wrap">
+        <table>
+            <thead><tr><th>Organism / Indication</th><th>Clinical Use</th></tr></thead>
+            <tbody>
+                <tr><td><span class="badge b-orange">Anaerobes</span> (1st line)</td><td>Intra-abdominal infections, pelvic sepsis, aspiration pneumonia, dental infections</td></tr>
+                <tr><td><em>Clostridium difficile</em></td><td>⚠️ No longer 1st-line (IDSA 2021). Preferred agents are fidaxomicin &gt; oral vancomycin. Metronidazole only if both are unavailable (non-severe CDI only).</td></tr>
+                <tr><td><em>Helicobacter pylori</em></td><td>Triple / quadruple therapy for peptic ulcer</td></tr>
+                <tr><td>Protozoa</td><td>Giardia lamblia, Entamoeba histolytica (amoebic dysentery/liver abscess), Trichomonas vaginalis</td></tr>
+            </tbody>
+        </table>
+        </div><!-- tbl-wrap -->
+
+        <div class="grid-2" style="margin-top:14px;">
+            <div class="danger">
+                <div class="danger-title">🍺 DISULFIRAM-LIKE REACTION</div>
+                <strong>Avoid alcohol</strong> during AND 48 h after treatment.<br>
+                Alcohol + Metronidazole → acetaldehyde buildup → severe flushing, nausea, vomiting, hypotension, tachycardia.
+            </div>
+            <div class="warn">
+                <div class="warn-title">⚠️ OTHER SE / C/I</div>
+                Metallic taste · Peripheral neuropathy (prolonged use)<br>
+                <span class="badge b-red">C/I: 1st trimester pregnancy</span> · Caution with anticoagulants (↑ warfarin effect)
+            </div>
+            <div class="corrected" style="margin-top:10px;">
+                <div class="corrected-title">✏️ UPDATED — C. DIFF GUIDELINE CHANGE (IDSA 2021)</div>
+                Metronidazole is <strong>no longer recommended as first-line</strong> for <em>C. difficile</em> infection in adults. Current preference: <strong>Fidaxomicin &gt; Oral Vancomycin &gt; Metronidazole</strong> (metronidazole only if fidaxomicin and vancomycin are unavailable, non-severe CDI only).
+            </div>
+        </div>
+    </div>
+
+    <!-- ══ ORDER OF PREFERENCE ══ -->
+    <hr class="section-hr">
+    <div id="order">
+        <div class="section-label">Clinical Decision Tool</div>
+        <div class="section-title">Order of Preference by Organism</div>
+
+        <div class="pref-grid">
+            <div class="pref-card">
+                <div class="pref-organism"><span class="badge b-purple">Gram +ve</span></div>
+                <div class="pref-line"><div class="pref-rank" style="color:var(--yellow)">🥇 1st</div><div><strong>Penicillin</strong></div></div>
+                <div class="pref-line"><div class="pref-rank" style="color:var(--text-dim)">🥈 2nd</div><div>Macrolides (if Pen allergic)</div></div>
+                <div class="pref-line"><div class="pref-rank" style="color:var(--text-faint)">🥉 3rd</div><div>1st Gen Cephalosporin</div></div>
+            </div>
+
+            <div class="pref-card">
+                <div class="pref-organism"><span class="badge b-red">Gram –ve</span></div>
+                <div class="pref-line"><div class="pref-rank" style="color:var(--yellow)">🥇 1st</div><div><strong>3rd Gen Cephalosporin</strong> (Ceftriaxone)</div></div>
+                <div class="pref-line"><div class="pref-rank" style="color:var(--text-dim)">🥈 2nd</div><div>Quinolones (Ciprofloxacin)</div></div>
+                <div class="pref-line"><div class="pref-rank" style="color:var(--text-faint)">🥉 3rd</div><div>Aminoglycosides</div></div>
+            </div>
+
+            <div class="pref-card">
+                <div class="pref-organism"><span class="badge b-cyan">Atypicals (Wall-less)</span></div>
+                <div class="pref-line"><div class="pref-rank" style="color:var(--yellow)">🥇</div><div><strong>Macrolides</strong> or <strong>Doxycycline</strong></div></div>
+                <div class="pref-line" style="font-size:0.78rem; color:var(--text-dim); margin-top:4px;"><em>β-lactams useless — no cell wall. E.g. Mycoplasma, Ureaplasma</em></div>
+            </div>
+
+            <div class="pref-card">
+                <div class="pref-organism"><span class="badge b-cyan">Atypicals (Obligate Intracellular)</span></div>
+                <div class="pref-line"><div class="pref-rank" style="color:var(--yellow)">🥇</div><div><strong>Doxycycline</strong></div></div>
+                <div class="pref-line"><div class="pref-rank" style="color:var(--text-dim)">Alt</div><div>Azithromycin (Chlamydia)</div></div>
+                <div class="pref-line" style="font-size:0.78rem; color:var(--text-dim); margin-top:4px;"><em>E.g. Chlamydia, Rickettsia, Coxiella</em></div>
+            </div>
+
+            <div class="pref-card">
+                <div class="pref-organism"><span class="badge b-blue">Spirochetes</span></div>
+                <div class="pref-line"><div class="pref-rank" style="color:var(--yellow)">🥇</div><div><strong>Penicillin</strong> (Syphilis, Leptospira)</div></div>
+                <div class="pref-line"><div class="pref-rank" style="color:var(--text-dim)">Alt</div><div>Doxycycline (Lyme, Syphilis if Pen allergic)</div></div>
+            </div>
+
+            <div class="pref-card">
+                <div class="pref-organism"><span class="badge b-orange">Anaerobes</span></div>
+                <div class="pref-line"><div class="pref-rank" style="color:var(--yellow)">🥇 1st</div><div><strong>Metronidazole</strong></div></div>
+                <div class="pref-line"><div class="pref-rank" style="color:var(--text-dim)">🥈 2nd</div><div>Clindamycin</div></div>
+                <div class="pref-line"><div class="pref-rank" style="color:var(--text-faint)">Also</div><div>Pip-Taz, Carbapenems</div></div>
+            </div>
+
+            <div class="pref-card" style="border-color:var(--red);">
+                <div class="pref-organism"><span class="badge b-red">MRSA</span></div>
+                <div class="pref-line"><div class="pref-rank" style="color:var(--yellow)">🥇 1st</div><div><strong>Vancomycin</strong> or <strong>Daptomycin</strong> (co-first-line per IDSA)</div></div>
+                <div class="pref-line"><div class="pref-rank" style="color:var(--text-dim)">🥈 2nd</div><div>Linezolid</div></div>
+                <div class="pref-line"><div class="pref-rank" style="color:var(--text-faint)">🥉 3rd</div><div>Ceftaroline</div></div>
+            </div>
+
+            <div class="pref-card">
+                <div class="pref-organism" style="color:var(--green)">TB (First Line)</div>
+                <div class="pref-line"><div class="pref-rank" style="color:var(--yellow)">RIPE</div><div><strong>Rifampicin + Isoniazid + Pyrazinamide + Ethambutol</strong></div></div>
+                <div class="pref-line" style="font-size:0.78rem; color:var(--text-dim); margin-top:4px;"><em>2HRZE / 4HR — WHO standard notation (H=Isoniazid, R=Rifampicin, Z=Pyrazinamide, E=Ethambutol). 2 months intensive + 4 months continuation.</em></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ══ SIDE EFFECTS MATRIX ══ -->
+    <hr class="section-hr">
+    <div id="se">
+        <div class="section-label">Quick Reference</div>
+        <div class="section-title">Drug-Specific Toxicity Cheat Sheet</div>
+
+        <div class="tbl-wrap">
+        <table>
+            <thead>
+                <tr><th>Drug / Class</th><th>Memorable Toxicity</th><th>C/I to Remember</th></tr>
+            </thead>
+            <tbody>
+                <tr><td><div class="drug-name">Penicillins</div><div class="coverage-strip"><span class="cov-label">Covers ▶</span><span class="badge b-purple">Gram +ve</span> <span class="badge b-red">–ve Cocci</span> <span class="badge b-blue">Spirochetes</span></div></td><td>Anaphylaxis, hypersensitivity rash</td><td>Penicillin allergy → use Macrolide or Vancomycin</td></tr>
+                <tr><td><div class="drug-name" style="border-color:var(--red);box-shadow:0 0 0 3px var(--red-dim);">Aminoglycosides</div><div class="coverage-strip" style="border-color:var(--red);background:rgba(248,113,113,0.06);"><span class="cov-label" style="color:var(--red);">Covers ▶</span><span class="badge b-red">Gram –ve</span></div></td><td>Nephrotoxicity (ARF) · Ototoxicity (irreversible) · NM blockade</td><td>Renal failure · MG · Respiratory failure · Pregnancy</td></tr>
+                <tr><td><div class="drug-name" style="border-color:var(--orange);box-shadow:0 0 0 3px var(--orange-dim);">Tetracyclines</div><div class="coverage-strip" style="border-color:var(--orange);background:rgba(251,146,60,0.06);"><span class="cov-label" style="color:var(--orange);">Covers ▶</span><span class="badge b-cyan">Atypicals</span> <span class="badge b-blue">Spirochetes</span> <span class="badge b-purple">Some Gram +ve</span></div></td><td>Yellow-brown tooth staining · Photosensitivity · Hepatitis</td><td>Children &lt;8 · Pregnancy · Renal failure (except Doxy)</td></tr>
+                <tr><td><div class="drug-name" style="border-color:var(--green);box-shadow:0 0 0 3px var(--green-dim);">Chloramphenicol</div><div class="coverage-strip" style="border-color:var(--green);background:rgba(52,211,153,0.06);"><span class="cov-label" style="color:var(--green);">Covers ▶</span><span class="badge b-purple">Gram +ve</span> <span class="badge b-red">Gram –ve</span> <span class="badge b-cyan">Rickettsia</span> <span class="badge b-orange">Anaerobes</span></div></td><td>Aplastic anemia (idiosyncratic, irreversible) vs. Dose-dependent reversible anemia · Gray Baby Syndrome</td><td>Neonates · Pregnancy · Bone marrow suppression</td></tr>
+                <tr><td><div class="drug-name" style="border-color:var(--green);box-shadow:0 0 0 3px var(--green-dim);">Macrolides</div><div class="coverage-strip" style="border-color:var(--green);background:rgba(52,211,153,0.06);"><span class="cov-label" style="color:var(--green);">Covers ▶</span><span class="badge b-purple">All Gram +ve</span> <span class="badge b-cyan">All Atypicals</span></div></td><td>GI intolerance (Erythromycin worst) · QT prolongation</td><td>QT-prolonging drugs (relative C/I)</td></tr>
+                <tr><td><div class="drug-name" style="border-color:var(--green);box-shadow:0 0 0 3px var(--green-dim);">Clindamycin</div><div class="coverage-strip" style="border-color:var(--green);background:rgba(52,211,153,0.06);"><span class="cov-label" style="color:var(--green);">Covers ▶</span><span class="badge b-orange">Anaerobes</span> <span class="badge b-purple">Gram +ve</span> <span class="badge b-red">MRSA (some)</span></div></td><td>Pseudomembranous colitis (highest C. diff risk)</td><td>History of C. diff</td></tr>
+                <tr><td><div class="drug-name" style="border-color:var(--cyan);box-shadow:0 0 0 3px var(--cyan-dim);">Quinolones</div><div class="coverage-strip" style="border-color:var(--cyan);background:rgba(56,189,248,0.06);"><span class="cov-label" style="color:var(--cyan);">Covers ▶</span><span class="badge b-red">All Gram –ve</span> <span class="badge b-purple">Gram +ve</span> <span class="badge b-cyan">Atypicals</span></div></td><td>Seizures · Tendon rupture (Achilles) · QT↑</td><td>Epilepsy · Children · Pregnancy · Co-steroids</td></tr>
+                <tr><td><div class="drug-name" style="border-color:var(--cyan);box-shadow:0 0 0 3px var(--cyan-dim);">Co-Trimoxazole</div><div class="coverage-strip" style="border-color:var(--cyan);background:rgba(56,189,248,0.06);"><span class="cov-label" style="color:var(--cyan);">Covers ▶</span><span class="badge b-purple">Gram +ve</span> <span class="badge b-red">Gram –ve</span> <span class="badge b-cyan">PCP · Nocardia · Toxoplasma</span></div></td><td>Megaloblastic anemia · SJS (sulfonamide) · Nephritis</td><td>Pregnancy (1st tri: folate antagonism; 3rd tri: kernicterus) · Folate deficiency</td></tr>
+                <tr><td><div class="drug-name" style="border-color:var(--red);box-shadow:0 0 0 3px var(--red-dim);">Vancomycin</div><div class="coverage-strip" style="border-color:var(--red);background:rgba(248,113,113,0.06);"><span class="cov-label" style="color:var(--red);">Covers ▶</span><span class="badge b-purple">Gram +ve ONLY</span> <span class="badge b-red">MRSA / VRSA</span></div></td><td>Nephrotoxicity · Ototoxicity · Red Man Syndrome</td><td>Rapid IV infusion without dilution</td></tr>
+                <tr><td><div class="drug-name" style="border-color:var(--orange);box-shadow:0 0 0 3px var(--orange-dim);">Metronidazole</div><div class="coverage-strip" style="border-color:var(--orange);background:rgba(251,146,60,0.06);"><span class="cov-label" style="color:var(--orange);">Covers ▶</span><span class="badge b-orange">Anaerobes</span> <span class="badge b-cyan">Protozoa</span></div></td><td>Metallic taste · Peripheral neuropathy · Disulfiram-like (alcohol)</td><td>1st trimester · Alcohol · ↑ Warfarin effect</td></tr>
+                <tr><td><div class="drug-name" style="border-color:var(--green);box-shadow:0 0 0 3px var(--green-dim);">Linezolid</div><div class="coverage-strip" style="border-color:var(--green);background:rgba(52,211,153,0.06);"><span class="cov-label" style="color:var(--green);">Covers ▶</span><span class="badge b-purple">Gram +ve</span> <span class="badge b-red">MRSA / VRSA</span> <span class="badge b-orange">Anaerobes</span></div></td><td>Thrombocytopenia · Serotonin syndrome · Optic neuropathy</td><td>SSRIs/MAOIs · Prolonged use</td></tr>
+            </tbody>
+        </table>
+        </div><!-- tbl-wrap -->
+    </div>
+
+    <!-- FOOTER -->
+    <div class="page-footer">
+        Antibiotics v2.2 · Fact-checked July 2026 · FCPS Part 1 Ready<br>
+        <span>✏️ v2.2: Ceftaroline VRSA badge softened (in vitro) in detail table · Ceftaroline rank label aligned to IDSA</span>
+    </div>
+
+</div><!-- /page-wrap -->
+
+<script>
+    // ── THEME TOGGLE ──
+    function toggleTheme() {
+        const html  = document.documentElement;
+        const icon  = document.getElementById('theme-icon');
+        const label = document.getElementById('theme-label');
+        if (html.getAttribute('data-theme') === 'dark') {
+            html.setAttribute('data-theme', 'light');
+            icon.textContent  = '🌙';
+            label.textContent = 'Dark';
+        } else {
+            html.setAttribute('data-theme', 'dark');
+            icon.textContent  = '☀️';
+            label.textContent = 'Light';
+        }
+    }
+
+    // ── ACTIVE NAV LINK (scroll-spy) ──
+    const sections = document.querySelectorAll('[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                navLinks.forEach(l => l.classList.remove('active'));
+                const active = document.querySelector(`.nav-link[href="#${entry.target.id}"]`);
+                if (active) {
+                    active.classList.add('active');
+                    active.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+                }
+            }
+        });
+    }, { rootMargin: '-60px 0px -60% 0px', threshold: 0 });
+
+    sections.forEach(s => observer.observe(s));
+</script>
+
+</body>
+</html>
